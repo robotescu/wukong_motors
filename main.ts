@@ -1,0 +1,15 @@
+input.onButtonPressed(Button.A, function () {
+    wuKong.setMotorSpeed(wuKong.MotorList.M1, -50)
+    wuKong.setMotorSpeed(wuKong.MotorList.M2, -50)
+    basic.pause(3000)
+    wuKong.stopMotor(wuKong.MotorList.M1)
+    wuKong.stopMotor(wuKong.MotorList.M2)
+})
+input.onButtonPressed(Button.B, function () {
+    wuKong.setMotorSpeed(wuKong.MotorList.M1, 50)
+    wuKong.setMotorSpeed(wuKong.MotorList.M2, 50)
+    basic.pause(3000)
+    wuKong.stopMotor(wuKong.MotorList.M1)
+    wuKong.stopMotor(wuKong.MotorList.M2)
+})
+basic.showIcon(IconNames.Yes)
